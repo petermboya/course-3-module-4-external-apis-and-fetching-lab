@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <h1>Weather Alerts App</h1>
+  <form id="weather-form">
+    <label for="state-input">Enter State Abbreviation:</label>  
   <input type="text" id="state-input" placeholder="Enter state abbreviation">
   <button id="fetch-alerts">Get Weather Alerts</button>
   <div id="alerts-display"></div>
-  <div id="error-message" class="hidden"></div>
+  <div id="error-message" style="display: none; color: red;"></div>
   <script src="./index.js"></script>
 </body>
 </html>
