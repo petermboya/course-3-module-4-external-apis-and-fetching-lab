@@ -13,8 +13,11 @@
     <label for="state-input">Enter State Abbreviation:</label>  
   <input type="text" id="state-input" placeholder="Enter state abbreviation">
   <button id="fetch-alerts">Get Weather Alerts</button>
-  <div id="alerts-display"></div>
-  <div id="error-message" style="display: none; color: red;"></div>
+  <div id="alerts-display">
+    <h2 id="alerts-title"></h2>
+    <ul id="alerts-list"></ul>
+  </div>
+  <div id="error-message" class="hidden" style="color: red;"></div>
   <script src="./index.js"></script>
 </body>
 </html>

@@ -74,7 +74,7 @@ function displayError(message) {
   const errorDiv = document.getElementById("error-message");
   if (errorDiv) {
     errorDiv.textContent = message;
-    errorDiv.style.display = "block";
+    errorDiv.classList.remove("hidden");
   }
 }
 
@@ -82,7 +82,7 @@ function clearError() {
   const errorDiv = document.getElementById("error-message");
   if (errorDiv) {
     errorDiv.textContent = "";
-    errorDiv.style.display = "none";
+    errorDiv.classList.add("hidden");
   }
 }
 
